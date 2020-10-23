@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Valera\'s Calculator</string>
+    <string name="plusButton">+</string>
+    <string name="minusButton">-</string>
+    <string name="multiplyButton">*</string>
+    <string name="devideButton">/</string>
+    <string name="valera_s_calculator">Valera\'s Calculator</string>
+</resources>

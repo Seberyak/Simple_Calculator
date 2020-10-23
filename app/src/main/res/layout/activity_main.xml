@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/group_divider"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20pt"
+        android:text="@string/valera_s_calculator"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="40sp" />
+    <GridLayout
+        android:id="@+id/group_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:columnCount="2"
+        >
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:maxWidth="100dp"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:minWidth="80dp"
+            android:textColorHint="#FF979797"
+            android:inputType="number"
+            android:autofillHints="" />
+
+        <EditText
+            android:layout_marginStart="20dp"
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxWidth="100dp"
+            android:minWidth="80dp"
+            android:textSize="18sp"
+            android:textColorHint="#FF979797"
+            android:inputType="number"
+
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/plusButton"
+            android:textSize="30sp"
+            android:background="#00574B"
+            android:onClick="clickedButton"
+            android:layout_marginBottom="10dp"
+            android:tag="+"
+            />
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/minusButton"
+            android:textSize="30sp"
+            android:background="#00574B"
+            android:onClick="clickedButton"
+            android:layout_marginStart="20dp"
+            android:tag="-"
+            />
+        <Button
+            android:id="@+id/multi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/multiplyButton"
+            android:textSize="30sp"
+            android:background="#00574B"
+            android:onClick="clickedButton"
+            android:tag="*"
+            />
+        <Button
+            android:layout_marginStart="20dp"
+            android:id="@+id/devide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/devideButton"
+            android:textSize="30sp"
+            android:background="#00574B"
+            android:onClick="clickedButton"
+            android:tag="/"
+            />
+    </GridLayout>
+
+
+</RelativeLayout>
